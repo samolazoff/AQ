@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/samolazoff/AQ#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.68.0"
   },
   "dependencies": {
     "gulp-pug": "^5.0.0"
