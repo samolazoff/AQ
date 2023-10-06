@@ -1,7 +1,118 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p {
-  color: red;
+button {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
+* {
+  font-family: "Roboto Slab", Arial, serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.app-header-nav {
+  position: relative;
+  height: 80px;
+  background-color: #78070B;
+}
+.app-header-nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+  height: 100%;
+}
+.app-header .presentation {
+  position: relative;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.app-header .presentation-title {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app-header .presentation-title__title {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: nnormal;
+  color: #78070B;
+}
+.app-header .presentation-title__subtitle {
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: nnormal;
+  color: #78070B;
+}
+.app-header .presentation__img {
+  position: absolute;
+  z-index: 0;
+  width: 380px;
+  top: -80px;
+  left: 50px;
+}
+
+.menu-main {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.menu-main__item {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: nnormal;
+  color: #FFFFFF;
+}
+.menu-main__item:hover {
+  color: #BC5A5D;
+}
+
+.menu-personal {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.menu-personal__item {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: nnormal;
+  color: #FFFFFF;
+}
+.menu-personal__item:hover {
+  color: #BC5A5D;
 }
