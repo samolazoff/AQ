@@ -4,17 +4,16 @@
     &-nav
         position: relative
         height: 80px
-        // background-color: $primary-color
         .container
             @include flex(row, flex-end, center)
             gap: 80px
             height: 100%
     .presentation
         position: relative
-        height: 320px
+        height: 300px
         @include flex(row, flex-end, flex-start)
         &-title
-            margin: 50px
+            margin-top: 50px
             @include flex(column, flex-start, center)
             &__title
                 @include text(1.6em, normal, nnormal, $primary-color)

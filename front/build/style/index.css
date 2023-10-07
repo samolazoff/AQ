@@ -23,6 +23,9 @@ a:active {
 
 * {
   font-family: "Roboto Slab", Arial, serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -49,14 +52,14 @@ a:active {
 }
 .app-header .presentation {
   position: relative;
-  height: 320px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
 }
 .app-header .presentation-title {
-  margin: 50px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -142,4 +145,67 @@ a:active {
   background-color: #78070B;
   height: 100%;
   width: 65%;
+}
+
+.title-block {
+  width: 80%;
+  margin-bottom: 1em;
+  border-bottom: 2px solid;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 600;
+  color: #78070B;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.app-main .app-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.app-main .app-about .title-block {
+  align-self: flex-start;
+}
+.app-main .app-about__desc {
+  width: 75%;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+  color: #212121;
+  text-align: justify;
+}
+.app-main .app-news-min {
+  width: 460px;
+  height: 50vh;
+}
+.app-main .app-news-min .title-block {
+  text-align: center;
+}
+.app-main .app-news-min-content {
+  padding-left: 20px;
+  border-left: 2px solid #78070B;
+  text-align: justify;
+}
+.app-main .app-news-min-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.app-main .app-news-min__data {
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 800;
+  color: #212121;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #000;
 }
