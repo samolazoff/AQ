@@ -2,10 +2,10 @@
 @import var.sass
 @import samolazoff
 *
-    font-family: $font-family
     box-sizing: border-box
     padding: 0
     margin: 0
+    font-family: $font-family
 .container
     max-width: $xxl
     margin: 0 auto
@@ -17,6 +17,8 @@
     border-bottom: 2px solid
     @include text(3em, normal, 600, $primary-color)
 .app-main
-    @include flex(row, flex-start, flex-start)
-    @import ../components/about/about
-    @import ../components/news-min/news-min
+    .about-wrap
+        @include flex(row, flex-start, flex-start)
+        margin-bottom: 2em
+        @import ../components/about/about
+        @import ../components/news-min/news-min
