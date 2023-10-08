@@ -364,10 +364,11 @@ a:active {
   padding-bottom: 5px;
   border-bottom: 2px solid #000;
 }
-.app-main .app-partners {
+
+.app-partners {
   margin-top: 5em;
 }
-.app-main .app-partners-wrap {
+.app-partners-wrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -375,7 +376,7 @@ a:active {
   flex-wrap: wrap;
   gap: 50px;
 }
-.app-main .app-partners-item {
+.app-partners-item {
   width: 300px;
   height: 300px;
   display: flex;
@@ -383,12 +384,12 @@ a:active {
   justify-content: center;
   align-items: center;
 }
-.app-main .app-partners-item__img {
+.app-partners-item__img {
   width: 250px;
   height: 250px;
   object-fit: contain;
 }
-.app-main .app-partners-item__title {
+.app-partners-item__title {
   font-size: 1.2em;
   font-style: normal;
   font-weight: 600;
