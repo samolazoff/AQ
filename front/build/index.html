@@ -84,7 +84,41 @@
       </section>
       <section class="app-contacts">
         <h2 class="title-block">Контакты</h2>
-        <div class="app-contacts-wrap"></div>
+        <div class="app-contacts-wrap">
+          <ul class="app-contacts-main"> 
+            <li class="app-contacts-main__items"> <span class="txt_bold">Адрес:</span><span>220017, г. Минск, ул. Притыцкого, 146, к. 208</span></li>
+            <li class="app-contacts-main__items"> <span class="txt_bold">Тел/Факс:</span><span id="contacts-number-ofice">+375 (17) 232-13-13</span></li>
+            <li class="app-contacts-main__items"> <span class="txt_bold">E-mail:</span><span id="contacts-email-ofice">alfaquality@ya.ru</span></li>
+            <li class="app-contacts-main__items"> <span class="txt_bold">Часы работы:</span>
+              <time>9:00 -</time>
+              <time>17:00 </time>
+            </li>
+          </ul>
+          <form class="app-contacts-form-feedback" method="post">
+            <h3 class="app-contacts-form-feedback__title">Мы на связи</h3>
+            <h4 class="app-contacts-form-feedback__subtitle">Оставте заявку, и мы свяжемся с вами</h4>
+            <div class="app-contacts-form-feedback-wrap">
+              <div class="app-contacts-form-feedback-content">
+                <div class="app-contacts-form-feedback-wrap-input">
+                  <div class="app-contacts-form-feedback-input">
+                    <label for="formFeedbackName">Ваше имя:</label>
+                    <input id="formFeedbackName" type="text" name="formFeedbackName">
+                  </div>
+                  <div class="app-contacts-form-feedback-input">
+                    <label for="formFeedbackCompany">Название компании:</label>
+                    <input id="formFeedbackCompany" type="text" name="formFeedbackCompany">
+                  </div>
+                  <div class="app-contacts-form-feedback-input">
+                    <label for="formFeedbackPhone">Номер телефона:</label>
+                    <input id="formFeedbackPhone" type="tel" name="formFeedbackPhone">
+                  </div>
+                </div>
+                <textarea id="formFeedbackPost" name="formFeedbackPost"> </textarea>
+              </div><span class="text-confid">Нажимая кнопку "Отправить", вы соглашаетесь на обработку персональных данных в соответствие с Политикой конфидициальности.</span>
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

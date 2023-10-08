@@ -1,4 +1,35 @@
 section.app-contacts
     h2.title-block Контакты
     .app-contacts-wrap
-    
+        ul.app-contacts-main 
+            li.app-contacts-main__items 
+                span.txt_bold Адрес:
+                span 220017, г. Минск, ул. Притыцкого, 146, к. 208
+            li.app-contacts-main__items 
+                span.txt_bold Тел/Факс:
+                span#contacts-number-ofice +375 (17) 232-13-13
+            li.app-contacts-main__items 
+                span.txt_bold E-mail:
+                span#contacts-email-ofice alfaquality@ya.ru
+            li.app-contacts-main__items 
+                span.txt_bold Часы работы:
+                time 9:00 -
+                time 17:00 
+        form.app-contacts-form-feedback(method="post")
+            h3.app-contacts-form-feedback__title Мы на связи
+            h4.app-contacts-form-feedback__subtitle Оставте заявку, и мы свяжемся с вами
+            .app-contacts-form-feedback-wrap
+                .app-contacts-form-feedback-content
+                    .app-contacts-form-feedback-wrap-input
+                        .app-contacts-form-feedback-input
+                            label(for="formFeedbackName") Ваше имя:
+                            input#formFeedbackName(type="text", name="formFeedbackName")
+                        .app-contacts-form-feedback-input
+                            label(for="formFeedbackCompany") Название компании:
+                            input#formFeedbackCompany(type="text", name="formFeedbackCompany")
+                        .app-contacts-form-feedback-input
+                            label(for="formFeedbackPhone") Номер телефона:
+                            input#formFeedbackPhone(type="tel", name="formFeedbackPhone")
+                    textarea#formFeedbackPost(name="formFeedbackPost") 
+                span.text-confid Нажимая кнопку "Отправить", вы соглашаетесь на обработку персональных данных в соответствие с Политикой конфидициальности.
+                button(type="submit") Отправить

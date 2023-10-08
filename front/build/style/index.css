@@ -34,6 +34,14 @@ a:active {
   padding: 0 20px;
 }
 
+.txt_bold {
+  font-weight: 700;
+}
+
+.text-confid {
+  font-size: 10px;
+}
+
 .app-header {
   position: relative;
   z-index: 999;
@@ -399,4 +407,78 @@ a:active {
 
 .app-contacts {
   margin-top: 5em;
+}
+.app-contacts-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+}
+.app-contacts-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 560px;
+}
+.app-contacts-main__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: #212121;
+}
+.app-contacts-form-feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app-contacts-form-feedback-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app-contacts-form-feedback-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.app-contacts-form-feedback-wrap-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.app-contacts-form-feedback-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.app-contacts-form-feedback-input input {
+  width: 300px;
+}
+
+#formFeedbackPost {
+  width: 300px;
+  height: 200px;
+}
+
+#contacts-number-ofice:hover,
+#contacts-email-ofice:hover {
+  font-weight: 600;
+  cursor: pointer;
+  color: #4E0204;
 }
