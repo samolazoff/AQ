@@ -9,12 +9,6 @@ html(lang="en")
         include ../components/header/header
         main.app-main.container
             include ../components/about/about
-            aside.app-news-min
-                h2.title-block Новости
-                .app-news-min-content 
-                    a.app-news-min-item(href="#")
-                        span.app-news-min__data 15.09.2023
-                        span.app-news-min__desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum explicabo nisi suscipit aut nulla possimus assumenda quas dignissimos sed porro commodi, at magnam earum? Officia nobis totam est mollitia?
-
+            include ../components/news-min/news-min
         script(src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" )
         script(src="script/swiper.js" )

@@ -1,0 +1,16 @@
+.app-news-min
+    width: 460px
+    height: 50vh
+    .title-block
+        text-align: center
+    &-content
+        padding-left: 20px
+        border-left: 2px solid $primary-color
+        text-align: justify
+    &-item
+        @include flex(column, flex-start, flex-start)
+        gap: 15px
+    &__data
+        @include text(1.3em, normal, 800, $primary-color-tet-dark)
+        padding-bottom: 5px
+        border-bottom: 2px solid #000
