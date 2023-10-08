@@ -19,6 +19,22 @@
 .app-main
     .about-wrap
         @include flex(row, flex-start, flex-start)
-        margin-bottom: 2em
         @import ../components/about/about
         @import ../components/news-min/news-min
+    .app-partners
+        margin-top: 5em
+        &-wrap
+            @include flex(row, center, flex-start)
+            flex-wrap: wrap
+            gap: 50px
+        &-item
+            width: 300px
+            height: 300px
+            @include flex(column, center, center)
+            &__img
+                width: 250px
+                height: 250px
+                object-fit: contain
+            &__title
+                @include text(1.2em, normal, 600, $primary-color-tet-dark)
+                text-align: center
