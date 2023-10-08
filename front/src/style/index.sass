@@ -18,16 +18,7 @@
     @include text(3em, normal, 600, $primary-color)
 .app-main
     @include flex(row, flex-start, flex-start)
-    .app-about
-        @include flex(column, flex-start, center)
-        .title-block
-            align-self: flex-start
-        width: 100%
-        &__desc
-            width: 75%
-            margin-bottom: 2em
-            @include text(1.2em, normal, normal, $primary-color-tet-dark)
-            text-align: justify
+    @import ../components/about/about.sass
     .app-news-min
         width: 460px
         height: 50vh
