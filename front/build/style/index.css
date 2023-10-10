@@ -373,6 +373,29 @@ a:active {
   border-bottom: 2px solid #000;
 }
 
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 15px 35px;
+  border-radius: 50px;
+  background-image: linear-gradient(147deg, #BC5A5D 0%, #78070B 74%);
+  color: #FFFFFF;
+  box-shadow: 0px 14px 40px #BC5A5D;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  color: #BC5A5D;
+  cursor: pointer;
+}
+
 .app-partners {
   margin-top: 5em;
 }
@@ -441,10 +464,12 @@ a:active {
   align-items: center;
 }
 .app-contacts-form-feedback-wrap {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 25px;
 }
 .app-contacts-form-feedback-content {
   display: flex;
@@ -452,6 +477,10 @@ a:active {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+.app-contacts-form-feedback-content textarea {
+  border-radius: 10px;
+  border: 2px solid #BC5A5D;
 }
 .app-contacts-form-feedback-wrap-input {
   display: flex;
@@ -469,6 +498,9 @@ a:active {
 }
 .app-contacts-form-feedback-input input {
   width: 300px;
+  height: 30px;
+  border-color: #BC5A5D;
+  border-radius: 5px;
 }
 
 #formFeedbackPost {
@@ -481,4 +513,30 @@ a:active {
   font-weight: 600;
   cursor: pointer;
   color: #4E0204;
+}
+
+.app-footer {
+  height: 90px;
+  margin-top: 5em;
+  background-color: #78070B;
+}
+.app-footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.app-footer .container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.app-footer .container a:hover {
+  color: #BC5A5D;
 }

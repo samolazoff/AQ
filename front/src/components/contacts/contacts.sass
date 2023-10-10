@@ -14,10 +14,15 @@
     &-form-feedback
         @include flex(column, flex-start, center)
         &-wrap
+            margin-top: 2em
             @include flex(column, flex-start, center)
+            gap: 25px
         &-content
             @include flex(row, center, center)
             gap: 20px
+            textarea
+                border-radius: 10px
+                border: 2px solid $primary-color-light
         &-wrap-input
             @include flex(column, flex-start, center)
             gap: 10px
@@ -26,6 +31,9 @@
             gap: 10px
             input
                 width: 300px
+                height: 30px
+                border-color: $primary-color-light
+                border-radius: 5px
 #formFeedbackPost
     width: 300px
     height: 200px

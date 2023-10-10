@@ -1,0 +1,12 @@
+.app-footer 
+    height: 90px
+    margin-top: 5em
+    background-color: $primary-color
+    .container
+        @include flex(column, center, center)
+        height: 100%
+        a
+            @include flex(column, center, center)
+            @include text(1.1em, normal, 500, $primary-color-txt)
+            &:hover
+                color: $primary-color-light
