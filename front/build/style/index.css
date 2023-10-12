@@ -828,7 +828,7 @@ a:active {
 .app-contacts-wrap {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 100px;
 }
@@ -838,7 +838,7 @@ a:active {
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  max-width: 560px;
+  max-width: 580px;
 }
 .app-contacts-main__items {
   display: flex;
@@ -846,10 +846,11 @@ a:active {
   justify-content: flex-start;
   align-items: center;
   gap: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: normal;
   color: #212121;
+  letter-spacing: -0.8px;
 }
 .app-contacts-form-feedback {
   display: flex;
@@ -871,8 +872,10 @@ a:active {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .app-contacts-form-feedback-content textarea {
+  width: 300px;
   border-radius: 10px;
   border: 2px solid #BC5A5D;
 }
@@ -909,6 +912,36 @@ a:active {
   color: #4E0204;
 }
 
+@media (max-width: 992px) {
+  .app-contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .app-contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .app-contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+  }
+  .app-contacts-form-feedback__subtitle {
+    letter-spacing: -1px;
+  }
+}
 .app-footer {
   height: 90px;
   margin-top: 5em;

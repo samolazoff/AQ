@@ -3,7 +3,6 @@
   <head>
     <link rel="shortcut icon" href="static/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/burger.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +85,48 @@
           <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/scitles.png" alt="scitles.png"><span class="app-partners-item__title">Государственное предприятие «Мозырские молочные продукты»</span></div>
         </div>
       </section>
+      <section class="app-contacts">
+        <h2 class="title-block">Контакты</h2>
+        <div class="app-contacts-wrap">
+          <ul class="app-contacts-main"> 
+            <li class="app-contacts-main__items"> <span class="txt_bold">Адрес:</span><span>220017, г. Минск, ул. Притыцкого, 146, к. 208</span></li>
+            <li class="app-contacts-main__items"> <span class="txt_bold">Тел/Факс:</span><span id="contacts-number-ofice">+375 (17) 232-13-13</span></li>
+            <li class="app-contacts-main__items"> <span class="txt_bold">E-mail:</span><span id="contacts-email-ofice">alfaquality@ya.ru</span></li>
+            <li class="app-contacts-main__items"> <span class="txt_bold">Часы работы:</span>
+              <time>9:00 -</time>
+              <time>17:00 </time>
+            </li>
+          </ul>
+          <form class="app-contacts-form-feedback" method="post">
+            <h3 class="app-contacts-form-feedback__title">Мы на связи</h3>
+            <h4 class="app-contacts-form-feedback__subtitle">Оставте заявку, и мы свяжемся с вами</h4>
+            <div class="app-contacts-form-feedback-wrap">
+              <div class="app-contacts-form-feedback-content">
+                <div class="app-contacts-form-feedback-wrap-input">
+                  <div class="app-contacts-form-feedback-input">
+                    <label for="formFeedbackName">Ваше имя:</label>
+                    <input id="formFeedbackName" type="text" name="formFeedbackName">
+                  </div>
+                  <div class="app-contacts-form-feedback-input">
+                    <label for="formFeedbackCompany">Название компании:</label>
+                    <input id="formFeedbackCompany" type="text" name="formFeedbackCompany">
+                  </div>
+                  <div class="app-contacts-form-feedback-input">
+                    <label for="formFeedbackPhone">Номер телефона:</label>
+                    <input id="formFeedbackPhone" type="tel" name="formFeedbackPhone">
+                  </div>
+                </div>
+                <textarea id="formFeedbackPost" name="formFeedbackPost"> </textarea>
+              </div><span class="text-confid">Нажимая кнопку "Отправить", вы соглашаетесь на обработку персональных данных в соответствие с Политикой конфидициальности.</span>
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="app-footer"> 
+      <div class="container"> <a href="/"> <span>ООО "Альфа Квалитет"</span><span>© 2023 aq.minsk.by</span></a></div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/swiper.js"></script>
     <script src="script/media.js"></script>

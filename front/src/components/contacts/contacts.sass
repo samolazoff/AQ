@@ -1,16 +1,17 @@
 .app-contacts
     margin-top: 5em
     &-wrap
-        @include  flex(row, flex-start, center)
+        @include  flex(row, space-between, center)
         gap: 100px
     &-main
         @include  flex(column, center, flex-start)
         gap: 15px
-        max-width: 560px
+        max-width: 580px
         &__items
             @include  flex(row, flex-start, center)
             gap: 5px
-            @include  text(1.2rem, normal, normal, $primary-color-tet-dark)
+            @include  text(1.0rem, normal, normal, $primary-color-tet-dark)
+            letter-spacing: -.8px
     &-form-feedback
         @include flex(column, flex-start, center)
         &-wrap
@@ -20,7 +21,9 @@
         &-content
             @include flex(row, center, center)
             gap: 20px
+            flex-wrap: wrap
             textarea
+                width: 300px
                 border-radius: 10px
                 border: 2px solid $primary-color-light
         &-wrap-input
@@ -42,3 +45,21 @@
     font-weight: 600
     cursor: pointer
     color: $primary-color-dark
+@media (max-width: 992px)
+    .app-contacts
+        &-wrap
+           @include flex(column, flex-start, center)
+           gap: 50px  
+@media (max-width: 768px)
+    .app-contacts
+        &-wrap
+           @include flex(column, flex-start, center)
+           gap: 50px  
+@media (max-width: 576px)
+    .app-contacts
+        &-wrap
+           @include flex(column, flex-start, center)
+           gap: 50px  
+        &-form-feedback
+            &__subtitle
+                letter-spacing: -1px
