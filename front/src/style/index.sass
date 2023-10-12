@@ -52,3 +52,10 @@
     .container
         max-width: $xl
         padding: 0 20px
+@media (max-width: 992px)
+    .container
+        max-width: $lg
+        padding: 0 20px
+    .app-main
+        .about-wrap
+            @include flex(column, flex-start, center)

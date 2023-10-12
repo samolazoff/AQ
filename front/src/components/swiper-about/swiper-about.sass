@@ -1,5 +1,5 @@
 .about-slider 
-	width: 100%
+	width: 80%
 	position: relative
 	max-width: 800px
 	margin: auto
@@ -139,12 +139,15 @@
 				background: $primary-color
 				height: 30px
 				box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3)
-@media (max-width: 992px)
+@media (max-width: 1200px)
 	.about-slider 
 		max-width: 600px
 		&__img 
 			width: 250px
 			height: 250px
+@media (max-width: 992px)	
+		.about-slider 
+			width: 100%
 @media (max-width: 768px)	
 	.about-slider 
 		max-width: 500px
@@ -167,9 +170,9 @@
 			align-items: center
 			flex-wrap: nowrap
 @media (max-width: 576px)	
-	about-slider 
+	.about-slider 
 		max-width: 300px
-		height: 500px
+		height: 480px
 		&__img 
 			width: 150px
 			height: 150px

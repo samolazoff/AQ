@@ -1,12 +1,19 @@
 .app-about
     @include flex(column, flex-start, center)
+    width: 80%
     .title-block
         align-self: flex-start
-    width: 100%
     &__desc
         width: 75%
         margin-bottom: 2em
         @include text(1.2em, normal, normal, $primary-color-tet-dark)
         text-align: justify
 @import ../swiper-about/swiper-about
-
+@media (max-width: 992px)
+    .app-about
+        width: 100%
+        .title-block
+            align-self: center
+            text-align: center
+        &__desc
+            width: 100%
