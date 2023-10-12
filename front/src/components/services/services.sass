@@ -1,0 +1,20 @@
+.app-main-services
+    .subtitle-block 
+        @include text(1.5em,normal, normal, $primary-color-tet-dark)
+    &-items
+        @include flex(row, center, flex-start)
+        flex-wrap: wrap
+        gap:25px
+        margin-top: 50px
+    &-item
+        @include flex(column, center, center)
+        width: 320px
+        height: 450px
+        gap:15px
+        &__img
+            width: 320px
+            height: 320px
+            object-fit: contain
+        &__title
+            @include text(1.0em,normal, 600, $primary-color-tet-dark)
+            text-align: center

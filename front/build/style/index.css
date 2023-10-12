@@ -968,6 +968,43 @@ a:active {
   color: #BC5A5D;
 }
 
+.app-main-services .subtitle-block {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  color: #212121;
+}
+.app-main-services-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 50px;
+}
+.app-main-services-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 450px;
+  gap: 15px;
+}
+.app-main-services-item__img {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+}
+.app-main-services-item__title {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  color: #212121;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1200px;
