@@ -3,6 +3,7 @@
   <head>
     <link rel="shortcut icon" href="static/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/burger.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +16,11 @@
     <header class="app-header">
       <nav class="app-header-nav">
         <div class="container">
-          <ul class="menu-main"> 
-            <li class="menu-main__item"><a href="/">Главная</a></li>
-            <li class="menu-main__item"><a href="/">Услуги</a></li>
-            <li class="menu-main__item"><a href="/">Разрешения</a></li>
-            <li class="menu-main__item"><a href="/">Отзывы</a></li>
-            <li class="menu-main__item"><a href="/">Новости</a></li>
-            <li class="menu-main__item"><a href="/">Контакты</a></li>
-          </ul>
-          <ul class="menu-personal">
-            <li class="menu-personal__item"><a href="/">Вход</a></li>
-            <li class="menu-personal__item"><a href="/">Регистрация</a></li>
-          </ul>
+          <div class="burger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
         </div>
       </nav>
       <div class="container presentation"><img class="presentation__img" src="static/img/logo.png" alt="aq">
@@ -37,94 +31,8 @@
         <div class="bgc-header-2"></div>
       </div>
     </header>
-    <main class="app-main container">
-      <div class="about-wrap">
-        <section class="app-about">
-          <h2 class="title-block">О нас</h2>
-          <p class="app-about__desc">Общество с ограниченной ответственностью «Альфа Квалитет» зарегистрировано в Минском горисполкоме в 2015 г. Наша специализация – деятельность в области промышленной безопасности</p>
-          <p class="app-about__desc">Мы используем новейшие методики и передовые технологии, обеспечиваем высокое качество работ по адекватным ценам</p>
-          <div class="about-slider">
-            <div class="about-slider__wrp swiper-wrapper">
-              <div class="about-slider__item swiper-slide">
-                <div class="about-slider__img"><img src="https://www.pergam.by/img/images/olympus/dvig-insp.jpg" alt=""></div>
-                <div class="about-slider__content"><span class="about-slider__text">Неразрушающий контроль технических устройств различного назначения</span><a class="about-slider__button" href="#">Больше</a></div>
-              </div>
-              <div class="about-slider__item swiper-slide">
-                <div class="about-slider__img"><img src="https://mnpz.by/upload/medialibrary/673/tmyu5fh5hhv7hm0acu1agbfej6i7ogcl.JPG" alt=""></div>
-                <div class="about-slider__content"><span class="about-slider__text">Техническое диагностирование технических устройств, применяемых на опасных производственных объектах</span><a class="about-slider__button" href="#">Больше </a></div>
-              </div>
-              <div class="about-slider__item swiper-slide">
-                <div class="about-slider__img"><img src="https://sopromatguru.ru/images/new_index/frame.png" alt=""></div>
-                <div class="about-slider__content"><span class="about-slider__text">Расчеты ресурса дальнейшей эксплуатации технологического оборудования</span><a class="about-slider__button" href="#">Больше </a></div>
-              </div>
-              <div class="about-slider__item swiper-slide">
-                <div class="about-slider__img"><img src="https://chernavchicy.roobrest.gov.by/files/00194/obj/115/94543/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(506).png" alt=""></div>
-                <div class="about-slider__content"><span class="about-slider__text">Качественное оказание услуг</span><a class="about-slider__button" href="#">Больше </a></div>
-              </div>
-            </div>
-            <div class="about-slider__pagination"></div>
-          </div>
-        </section>
-        <aside class="app-news-min">
-          <h2 class="title-block">Новости</h2>
-          <div class="app-news-min-content"> <a class="app-news-min-item" href="#">
-              <time class="app-news-min__data" datetime="20023-09-15 11:50">15.09.2023</time><span class="app-news-min__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum explicabo nisi suscipit aut nulla possimus assumenda quas dignissimos sed porro commodi, at magnam earum? Officia nobis totam est mollitia?</span></a></div>
-        </aside>
-      </div>
-      <section class="app-partners">
-        <h2 class="title-block">Наши партнёры</h2>
-        <div class="app-partners-wrap"> 
-          <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/gazprom.png" alt="gazprom.png"><span class="app-partners-item__title">ОАО «Газпром трансгаз Беларусь»</span></div>
-          <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/ecogaz.jpg" alt="ecogaz.jpg"><span class="app-partners-item__title">ОАО «Газпром трансгаз Беларусь» ф-л «ЭКОГАЗ»</span></div>
-          <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/mnpz.png" alt="mnpz.png"><span class="app-partners-item__title">ОАО «Мозырский НПЗ»</span></div>
-          <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/nefthimpng.png" alt="nefthimpng.png"><span class="app-partners-item__title">Предприятия концерна «Белнефтехим»</span></div>
-          <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/bvm.gif" alt="bvm.gif"><span class="app-partners-item__title">УП «Могилеввторчермет»</span></div>
-          <div class="app-partners-item"> <img class="app-partners-item__img" src="static/img/scitles.png" alt="scitles.png"><span class="app-partners-item__title">Государственное предприятие «Мозырские молочные продукты»</span></div>
-        </div>
-      </section>
-      <section class="app-contacts">
-        <h2 class="title-block">Контакты</h2>
-        <div class="app-contacts-wrap">
-          <ul class="app-contacts-main"> 
-            <li class="app-contacts-main__items"> <span class="txt_bold">Адрес:</span><span>220017, г. Минск, ул. Притыцкого, 146, к. 208</span></li>
-            <li class="app-contacts-main__items"> <span class="txt_bold">Тел/Факс:</span><span id="contacts-number-ofice">+375 (17) 232-13-13</span></li>
-            <li class="app-contacts-main__items"> <span class="txt_bold">E-mail:</span><span id="contacts-email-ofice">alfaquality@ya.ru</span></li>
-            <li class="app-contacts-main__items"> <span class="txt_bold">Часы работы:</span>
-              <time>9:00 -</time>
-              <time>17:00 </time>
-            </li>
-          </ul>
-          <form class="app-contacts-form-feedback" method="post">
-            <h3 class="app-contacts-form-feedback__title">Мы на связи</h3>
-            <h4 class="app-contacts-form-feedback__subtitle">Оставте заявку, и мы свяжемся с вами</h4>
-            <div class="app-contacts-form-feedback-wrap">
-              <div class="app-contacts-form-feedback-content">
-                <div class="app-contacts-form-feedback-wrap-input">
-                  <div class="app-contacts-form-feedback-input">
-                    <label for="formFeedbackName">Ваше имя:</label>
-                    <input id="formFeedbackName" type="text" name="formFeedbackName">
-                  </div>
-                  <div class="app-contacts-form-feedback-input">
-                    <label for="formFeedbackCompany">Название компании:</label>
-                    <input id="formFeedbackCompany" type="text" name="formFeedbackCompany">
-                  </div>
-                  <div class="app-contacts-form-feedback-input">
-                    <label for="formFeedbackPhone">Номер телефона:</label>
-                    <input id="formFeedbackPhone" type="tel" name="formFeedbackPhone">
-                  </div>
-                </div>
-                <textarea id="formFeedbackPost" name="formFeedbackPost"> </textarea>
-              </div><span class="text-confid">Нажимая кнопку "Отправить", вы соглашаетесь на обработку персональных данных в соответствие с Политикой конфидициальности.</span>
-              <button class="btn" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="app-footer"> 
-      <div class="container"> <a href="/"> <span>ООО "Альфа Квалитет"</span><span>© 2023 aq.minsk.by</span></a></div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/swiper.js"></script>
+    <script src="script/media.js"></script>
   </body>
 </html>

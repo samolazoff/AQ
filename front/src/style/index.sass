@@ -14,7 +14,8 @@
     font-weight: 700
 .text-confid
     font-size: 10px
-@import ../components/header/header.sass
+@import ../components/burger/burger
+@import ../components/header/header
 .title-block
     width: 80%
     margin-bottom: 1em
@@ -42,3 +43,7 @@
 @import ../components/partners/partners
 @import ../components/contacts/contacts
 @import ../components/footer/footer
+@media (max-width: 1200px)
+    .container
+        max-width: $xl
+        padding: 0 20px

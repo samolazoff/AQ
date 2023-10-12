@@ -1,0 +1,87 @@
+.burger
+    position: relative
+    z-index: 999
+    width: 50px
+    height: 50px
+    cursor: pointer
+.line
+    position: absolute
+    width: 48px
+    height: 16px
+    border-top: solid 3px white
+.line-2
+    top: 16px
+.line-3
+    top: 32px   
+@keyframes line-2-open
+    0%
+        width: 50px
+        top: 25px
+    100%
+        width: 0
+        top: 25px
+@keyframes line-1-open
+    0%
+        transform: rotate(0deg)
+        top: 0px
+        left: 0px
+    
+    100%
+        top: 25px
+        left: 5px
+        transform: rotate(-45deg)
+@keyframes line-3-open
+    0%
+        transform: rotate(0deg)
+        top: 32px
+        right: 0px
+    
+    100%
+        top: 25px
+        right: 5px
+        transform: rotate(45deg)
+.burger.open .line-2
+    animation: line-2-open .25s ease-in
+    animation-fill-mode: forwards
+.burger.open .line-1
+    animation: line-1-open .5s ease-in
+    animation-fill-mode: forwards
+.burger.open .line-3
+    animation: line-3-open .5s ease-in
+    animation-fill-mode: forwards
+@keyframes line-2-close
+    0%
+        width: 0px
+        top: 25px
+    100%
+        width: 48px
+        top: 16px
+@keyframes line-1-close
+    0%
+        transform: rotate(-45deg)
+        top: 25px
+        left: 5px
+    
+    100%
+        top: 0px
+        left: 0px
+        transform: rotate(0deg)
+@keyframes line-3-close
+    0%
+        transform: rotate(45deg)
+        top: 25px
+        right: 5px
+    
+    100%
+        top: 32px
+        right: 0px
+        transform: rotate(0deg)
+.burger.close .line-2
+    animation: line-2-close .25s ease-in
+    animation-fill-mode: forwards
+.burger.close .line-1
+    animation: line-1-close .5s ease-in
+    animation-fill-mode: forwards
+.burger.close .line-3
+    animation: line-3-close .5s ease-in
+    animation-fill-mode: forwards

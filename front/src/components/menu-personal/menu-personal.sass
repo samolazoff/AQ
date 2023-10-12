@@ -7,3 +7,10 @@
         @include text(1.0em, normal, nnormal, $primary-color-txt)
         &:hover
             color: #BC5A5D
+@media (max-width: 1200px)
+    .menu-personal
+        gap: 15px
+        font-size: .95em
+@media (max-width: 992px)
+    .menu-personal
+        @include flex(column, center, center)

@@ -42,13 +42,134 @@ a:active {
   font-size: 10px;
 }
 
+.burger {
+  position: relative;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  border-top: solid 3px white;
+}
+
+.line-2 {
+  top: 16px;
+}
+
+.line-3 {
+  top: 32px;
+}
+
+@keyframes line-2-open {
+  0% {
+    width: 50px;
+    top: 25px;
+  }
+  100% {
+    width: 0;
+    top: 25px;
+  }
+}
+@keyframes line-1-open {
+  0% {
+    transform: rotate(0deg);
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 25px;
+    left: 5px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes line-3-open {
+  0% {
+    transform: rotate(0deg);
+    top: 32px;
+    right: 0px;
+  }
+  100% {
+    top: 25px;
+    right: 5px;
+    transform: rotate(45deg);
+  }
+}
+.burger.open .line-2 {
+  animation: line-2-open 0.25s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.burger.open .line-1 {
+  animation: line-1-open 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.burger.open .line-3 {
+  animation: line-3-open 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line-2-close {
+  0% {
+    width: 0px;
+    top: 25px;
+  }
+  100% {
+    width: 48px;
+    top: 16px;
+  }
+}
+@keyframes line-1-close {
+  0% {
+    transform: rotate(-45deg);
+    top: 25px;
+    left: 5px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes line-3-close {
+  0% {
+    transform: rotate(45deg);
+    top: 25px;
+    right: 5px;
+  }
+  100% {
+    top: 32px;
+    right: 0px;
+    transform: rotate(0deg);
+  }
+}
+.burger.close .line-2 {
+  animation: line-2-close 0.25s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.burger.close .line-1 {
+  animation: line-1-close 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.burger.close .line-3 {
+  animation: line-3-close 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
 .app-header {
   position: relative;
   z-index: 999;
 }
 .app-header-nav {
   position: relative;
-  height: 80px;
+  height: 90px;
 }
 .app-header-nav .container {
   display: flex;
@@ -76,13 +197,13 @@ a:active {
 .app-header .presentation-title__title {
   font-size: 1.6em;
   font-style: normal;
-  font-weight: nnormal;
+  font-weight: 700;
   color: #78070B;
 }
 .app-header .presentation-title__subtitle {
   font-size: 0.5em;
   font-style: normal;
-  font-weight: nnormal;
+  font-weight: 600;
   color: #78070B;
 }
 .app-header .presentation__img {
@@ -112,6 +233,22 @@ a:active {
   color: #BC5A5D;
 }
 
+@media (max-width: 1200px) {
+  .menu-main {
+    gap: 15px;
+  }
+  .menu-main__item {
+    font-size: 0.95em;
+  }
+}
+@media (max-width: 992px) {
+  .menu-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .menu-personal {
   position: relative;
   z-index: 999;
@@ -131,6 +268,20 @@ a:active {
   color: #BC5A5D;
 }
 
+@media (max-width: 1200px) {
+  .menu-personal {
+    gap: 15px;
+    font-size: 0.95em;
+  }
+}
+@media (max-width: 992px) {
+  .menu-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .bgc-header {
   position: absolute;
   z-index: 0;
@@ -139,7 +290,7 @@ a:active {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  height: 80px;
+  height: 100px;
   width: 100%;
 }
 .bgc-header .bgc-header-1 {
@@ -155,6 +306,32 @@ a:active {
   width: 65%;
 }
 
+@media (max-width: 1200px) {
+  .app-header-nav .container {
+    gap: 40px;
+  }
+  .app-header .presentation {
+    height: 150px;
+  }
+  .app-header .presentation-title {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .app-header .presentation-title__title {
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 700;
+    color: #78070B;
+  }
+  .app-header .presentation__img {
+    width: 280px;
+    top: -80px;
+    left: 50px;
+  }
+}
 .title-block {
   width: 80%;
   margin-bottom: 1em;
@@ -539,4 +716,11 @@ a:active {
 }
 .app-footer .container a:hover {
   color: #BC5A5D;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
 }

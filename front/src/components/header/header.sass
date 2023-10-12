@@ -3,7 +3,7 @@
     z-index: 999
     &-nav
         position: relative
-        height: 80px
+        height: 90px
         .container
             @include flex(row, flex-end, center)
             gap: 80px
@@ -16,9 +16,9 @@
             margin-top: 50px
             @include flex(column, flex-start, center)
             &__title
-                @include text(1.6em, normal, nnormal, $primary-color)
+                @include text(1.6em, normal, 700, $primary-color)
             &__subtitle
-                @include text(.5em, normal, nnormal, $primary-color)
+                @include text(.5em, normal, 600, $primary-color)
         &__img
             position: absolute
             z-index: 1
@@ -32,7 +32,7 @@
     z-index: 0
     top: 0
     @include flex(row, flex-end, center)
-    height: 80px
+    height: 100px
     width: 100%
     .bgc-header-1
         height: 100%
@@ -44,3 +44,19 @@
         background-color: $primary-color
         height: 100%
         width: 65%
+@media (max-width: 1200px)
+    .app-header
+        &-nav
+            .container
+                gap: 40px
+        .presentation
+            height: 150px
+            &-title
+                margin-top: 20px
+                @include flex(column, flex-start, center)
+                &__title
+                    @include text(1.2em, normal, 700, $primary-color)
+            &__img
+                width: 280px
+                top: -80px
+                left: 50px
