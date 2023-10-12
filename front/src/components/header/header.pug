@@ -1,9 +1,8 @@
 header.app-header
-    nav.app-header-nav
-        .container
-            //- include ../menu-main//menu-main
-            //- include ../menu-personal//menu-personal
-            include ../burger/burger
+    nav.app-header-nav.container
+        include ../burger/burger
+        include ../menu-main//menu-main
+        include ../menu-personal//menu-personal
     .container.presentation
         img.presentation__img(src="static/img/logo.png", alt="aq")
         h1.presentation-title 
@@ -12,4 +11,4 @@ header.app-header
             span.presentation-title__subtitle тел./факс: +375 (17) 232-13-13, e-mail: alfaquality@ya.ru
     .bgc-header
         .bgc-header-1
-        .bgc-header-2
+        .bgc-header-2   

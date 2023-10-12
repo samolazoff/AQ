@@ -42,7 +42,17 @@ a:active {
   font-size: 10px;
 }
 
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
 .burger {
+  margin-top: 20px;
+  display: none;
   position: relative;
   z-index: 999;
   width: 50px;
@@ -164,24 +174,27 @@ a:active {
   animation-fill-mode: forwards;
 }
 
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+  }
+}
 .app-header {
   position: relative;
   z-index: 999;
 }
 .app-header-nav {
   position: relative;
-  height: 90px;
-}
-.app-header-nav .container {
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 80px;
-  height: 100%;
 }
 .app-header .presentation {
   position: relative;
+  z-index: 1;
   height: 300px;
   display: flex;
   flex-direction: row;
@@ -244,10 +257,13 @@ a:active {
 }
 @media (max-width: 992px) {
   .menu-main {
+    width: 100%;
+    font-size: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: none;
   }
 }
 .menu-personal {
@@ -281,6 +297,10 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 1.2em;
+    display: none;
   }
 }
 .bgc-header {
@@ -291,7 +311,7 @@ a:active {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
+  height: 80px;
   width: 100%;
 }
 .bgc-header .bgc-header-1 {
@@ -308,7 +328,7 @@ a:active {
 }
 
 @media (max-width: 1200px) {
-  .app-header-nav .container {
+  .app-header-nav {
     gap: 40px;
   }
   .app-header .presentation {
@@ -331,6 +351,69 @@ a:active {
     width: 280px;
     top: -80px;
     left: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .app-header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    background-color: #78070B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .app-header .presentation__img {
+    width: 260px;
+    top: 0px;
+    left: 0px;
+  }
+  .app-header .presentation-title {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .app-header .presentation__img {
+    width: 180px;
+    top: 0px;
+    left: 0px;
+  }
+  .app-header .presentation-title__title {
+    font-size: 0.85em;
+    font-style: normal;
+    font-weight: 700;
+    color: #78070B;
+  }
+  .app-header .presentation-title__subtitle {
+    font-size: 0.5em;
+    font-style: normal;
+    font-weight: 700;
+    color: #78070B;
+  }
+}
+@media (max-width: 576px) {
+  .app-header .presentation__img {
+    width: 120px;
+    top: 0px;
+    left: 0px;
+  }
+  .app-header .presentation-title__title {
+    font-size: 0.65em;
+    font-style: normal;
+    font-weight: 700;
+    color: #78070B;
+  }
+  .app-header .presentation-title__subtitle {
+    font-size: 0.5em;
+    font-style: normal;
+    font-weight: 700;
+    color: #78070B;
+    letter-spacing: -1.8px;
+    text-align: justify;
   }
 }
 .title-block {

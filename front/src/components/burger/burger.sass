@@ -1,4 +1,6 @@
 .burger
+    margin-top: 20px
+    display: none
     position: relative
     z-index: 999
     width: 50px
@@ -86,3 +88,6 @@
 .burger.close .line-3
     animation: line-3-close .5s ease-in
     animation-fill-mode: forwards
+@media (max-width: 992px)
+    .burger
+        display: block
