@@ -5,13 +5,39 @@
         flex-wrap: wrap
         gap: 50px
     &-item
-        width: 300px
-        height: 300px
+        width: 250px
+        height: 250px
         @include flex(column, center, center)
         &__img
-            width: 250px
-            height: 250px
+            width: 200px
+            height: 200px
             object-fit: contain
         &__title
             @include text(1.2em, normal, 600, $primary-color-tet-dark)
             text-align: center
+@media (max-width: 992px)
+    .app-partners
+        &-wrap
+            gap: 25px
+        &-item
+            width: 200px
+            height: 200px
+            &__img
+                width: 150px
+                height: 150px
+                object-fit: contain
+            &__title
+                font-size: 1em
+@media (max-width: 576px)
+    .app-partners
+        &-wrap
+            gap: 10px
+        &-item
+            width: 120px
+            height: 120px
+            &__img
+                width: 120px
+                height: 120px
+                object-fit: contain
+            &__title
+                display: none
