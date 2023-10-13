@@ -1,0 +1,35 @@
+.app-main-permissions-cont-list
+    width: 100%
+    @include flex(column, flex-start, flex-start)
+    gap: 50px
+    &-item
+        width: 100%
+        padding: 10px 20px
+        border: 2px solid  $primary-color-light
+        border-radius: 40px
+        @include flex(column, flex-start, flex-start)
+        gap: 50px
+        &-box
+            width: 100%
+            @include flex(row, space-between, center)
+            cursor: pointer
+        &-name
+            @include flex(row, flex-start, center)
+            gap: 20px
+            span
+                @include text(1.5em, normal, 600,$primary-color-tet-dark)
+        &__icon
+            width: 96px
+        &-main
+            width: 100%
+            @include flex(column, flex-start, center)
+            gap: 20px
+            span
+                @include text(1.3em, normal, 600,$primary-color-tet-dark)
+            &__img
+                width: 90%
+#span_down, 
+#span_up
+    @include text(2em, normal, 600, $primary-color-tet-dark)
+    margin: 10px
+            

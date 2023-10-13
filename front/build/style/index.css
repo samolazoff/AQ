@@ -43,7 +43,7 @@ a:active {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-flex {
@@ -1003,6 +1003,76 @@ a:active {
   font-weight: 600;
   color: #212121;
   text-align: center;
+}
+
+.app-main-permissions-cont-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+.app-main-permissions-cont-list-item {
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid #BC5A5D;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+.app-main-permissions-cont-list-item-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.app-main-permissions-cont-list-item-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.app-main-permissions-cont-list-item-name span {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  color: #212121;
+}
+.app-main-permissions-cont-list-item__icon {
+  width: 96px;
+}
+.app-main-permissions-cont-list-item-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.app-main-permissions-cont-list-item-main span {
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 600;
+  color: #212121;
+}
+.app-main-permissions-cont-list-item-main__img {
+  width: 90%;
+}
+
+#span_down,
+#span_up {
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 600;
+  color: #212121;
+  margin: 10px;
 }
 
 @media (max-width: 1200px) {
