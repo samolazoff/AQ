@@ -1,0 +1,30 @@
+.news-list
+    width: 100%
+    @include flex(row, center, flex-start)
+    flex-wrap: wrap
+    gap: 25px
+    &-item
+        min-width: 450px
+        @include flex(row, flex-start, flex-start)
+        flex: 1
+        padding: 20px 10px
+        border: 2px solid  $primary-color-light
+        border-radius: 40px
+        &__img
+            width: 50%
+        &-cont
+            @include flex(column, flex-satrt, flex-start)
+            gap: 10px
+            &__data
+                @include text(1.2em, normal, 600, $primary-color-tet-dark)
+            &__title
+                @include text(1.5em, normal, 600, $primary-color-tet-dark)
+            &__text
+                @include text(1.1em, normal, normal, $primary-color-tet-dark)
+            .btn
+                align-self: center
+@media (max-width: 992px)
+    .news-list
+        gap: 20px
+        &-item
+            min-width: 350px
