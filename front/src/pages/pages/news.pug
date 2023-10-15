@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        
+        link(rel="shortcut icon", href="../static/img/favicon.svg", type="image/x-icon")
+        link(rel="stylesheet", href="../style/index.css")
+        include ../../components/head/head
+    body 
+        include ../../components/header/header
+        main.app-main-services.container
+            section.app-main-news
+                h2.title-block Новости
+
+        include ../../components/footer/footer
+        script(src="../script/media.js" )
+        script(src="../script/permissions.js" )
