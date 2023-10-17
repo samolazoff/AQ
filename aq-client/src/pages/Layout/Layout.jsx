@@ -3,10 +3,12 @@ import { Outlet } from 'react-router-dom';
 
 import './Layout.sass';
 
+import Header from '../../components/Header/Header';
+
 const Layout = () => {
     return (
     <>
-        <header> asdasd</header>
+        <Header></Header>
         <main className="app-main">
             <Outlet></Outlet>
         </main>

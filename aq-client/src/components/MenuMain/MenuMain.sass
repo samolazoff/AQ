@@ -1,0 +1,22 @@
+@import ../styles/samolazoff
+@import ../styles/var
+.menu-main
+    position: relative
+    z-index: 999
+    @include flex(row, center, center)
+    gap: 20px
+    &__item
+        @include text(1.1em, normal, normal, $primary-color-txt)
+        &:hover
+            color: #BC5A5D
+@media (max-width: 1200px)
+    .menu-main
+        gap: 15px
+        &__item
+            font-size: .95em
+@media (max-width: 992px)
+    .menu-main
+        width: 100%
+        font-size: 1.2em
+        @include flex(column, center, center)
+        display: none

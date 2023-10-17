@@ -1,0 +1,105 @@
+@import ../styles/samolazoff
+@import ../styles/var
+
+.app-header
+    position: relative
+    z-index: 999
+    &-nav
+        position: relative
+        height: 80px
+        @include flex(row, flex-end, center)
+        gap: 80px
+    .presentation
+        position: relative
+        z-index: 1
+        height: 300px
+        @include flex(row, flex-end, flex-start)
+        &-title
+            margin-top: 50px
+            @include flex(column, flex-start, center)
+            &__title
+                @include text(1.6em, normal, 700, $primary-color)
+            &__subtitle
+                @include text(.5em, normal, 600, $primary-color)
+        &__img
+            position: absolute
+            z-index: 1
+            width: 320px
+            top: -80px
+            left: 50px
+.bgc-header
+    position: absolute
+    z-index: 0
+    top: 0
+    @include flex(row, flex-end, center)
+    height: 80px
+    width: 100%
+    .bgc-header-1
+        height: 100%
+        width: 35%
+        background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 7%, rgb(120, 7, 11) 94%)
+        background: -moz-linear-gradient(90deg, rgb(255, 255, 255) 7%, rgb(120, 7, 11) 94%)
+        background: linear-gradient(90deg, rgb(255, 255, 255) 7%, rgb(120, 7, 11) 94%)
+    .bgc-header-2  
+        background-color: $primary-color
+        height: 100%
+        width: 65%
+@media (max-width: 1200px)
+    .app-header
+        &-nav
+            gap: 40px
+        .presentation
+            height: 150px
+            &-title
+                margin-top: 20px
+                @include flex(column, flex-start, center)
+                &__title
+                    @include text(1.2em, normal, 700, $primary-color)
+            &__img
+                width: 280px
+                top: -80px
+                left: 50px
+@media (max-width: 992px)
+    .app-header
+        &-nav
+            position: absolute
+            top: 0
+            right: 0
+            width: 100%
+            min-width: 400px
+            height: auto
+            background-color: $primary-color
+            @include flex(column, flex-start, flex-end)
+        .presentation
+            &__img
+                width: 260px
+                top: 0px
+                left: 0px
+            &-title
+                margin-top: 90px
+@media (max-width: 768px)
+    .app-header
+        .presentation
+            &__img
+                width: 180px
+                top: 0px
+                left: 0px
+            &-title
+                &__title
+                    @include text(.85em, normal, 700, $primary-color)
+                &__subtitle
+                    @include text(.5em, normal, 700, $primary-color)
+@media (max-width: 576px)
+    .app-header
+        .presentation
+            &__img
+                width: 120px
+                top: 0px
+                left: 0px
+            &-title
+                &__title
+                    @include text(.65em, normal, 700, $primary-color)
+                &__subtitle
+                   @include text(.5em, normal, 700, $primary-color)
+                   letter-spacing: -1.8px
+                   text-align: justify

@@ -1,0 +1,28 @@
+@import ../src/components/styles/var
+@import ../src/components/styles/reset
+@import ../src/components/styles/samolazoff
+#root
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+.container
+    max-width: $xxl
+    margin: 0 auto
+    padding: 0 20px
+.app-main
+    flex: 1
+    margin-top: 50px
+.txt_bold 
+    font-weight: 700
+.text-confid
+    font-size: 10px
+.d-none
+    display: none !important
+.d-flex
+    display: flex !important
+.title-block
+    width: 80%
+    margin-bottom: 1em
+    border-bottom: 2px solid
+    @include text(3em, normal, 600, $primary-color)
+    
