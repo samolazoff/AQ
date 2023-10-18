@@ -6,9 +6,9 @@ const MenuPersonal = ({menuPersonal}) => {
     return (
         <ul className='menu-personal'>
             {
-                menuPersonal.map(e => {
+                menuPersonal.map((e, index) => {
                     return (
-                        <li className="menu-personal__item">
+                        <li className="menu-personal__item" key={index}>
                             <a href={e.link}>{e.name}</a>
                         </li>
                     )

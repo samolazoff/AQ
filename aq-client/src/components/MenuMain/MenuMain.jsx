@@ -7,9 +7,9 @@ const MenuMain = ({arrLinksMenuMain}) => {
     return (
         <ul className='menu-main'>
             {
-                arrLinksMenuMain.map(e=>{
+                arrLinksMenuMain.map((e, index)=>{
                     return(
-                        <li className='menu-main__item'>
+                        <li className='menu-main__item' key={index}>
                             <NavLink href={e.link}>{e.name}</NavLink>
                         </li>
                     )

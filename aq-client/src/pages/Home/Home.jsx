@@ -2,9 +2,11 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div>
-            HOME
-        </div>
+        <section className='container app-home'>
+            <div className="abour-wrap">
+                
+            </div>
+        </section>
     );
 };
 
