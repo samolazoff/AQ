@@ -3,10 +3,10 @@ import React from 'react';
 import './Burger.sass';
 
 import {useSelector, useDispatch} from 'react-redux';
-import {open, close} from '../../features/header/burgerSlice';
+import {open} from '../../features/header/burgerSlice';
 
 const Burger = () => {
-    const burgerClasses = useSelector((state) => state.burger.classes);
+    const burgerClasses = useSelector((state) => state.burger.classes).join(' ');
     const dispatch = useDispatch();
 
     return (

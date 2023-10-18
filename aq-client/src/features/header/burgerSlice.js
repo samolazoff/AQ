@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    classes: "burger"
+    classes: ["burger"]
 };
 
 export const burgerSlice = createSlice({
@@ -9,14 +9,7 @@ export const burgerSlice = createSlice({
    initialState,
    reducers: {
         open: (state) => {
-            state.classes = (state.classes ==="burger open")?"burger close":"burger open";
-        //     if(state.classes ==="burger open"){
-        //         state.classes ="burger close"
-        //     }
-        //     state.classes ="burger open"
-        // },
-        // close: (state) => {
-        //     state.classes ="burger close"
+            state.classes = state.classes.includes('open')?["burger", "close"]:["burger", "open"];
         },
    }
 });
