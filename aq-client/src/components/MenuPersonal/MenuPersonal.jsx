@@ -1,15 +1,19 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
+import {useSelector} from 'react-redux';
 
 import './MenuPersonal.sass';
 
 const MenuPersonal = ({menuPersonal}) => {
+    const menuPersonalClasses = useSelector((state) => state.menu.classesMenuPersonal).join(' ');
+
     return (
-        <ul className='menu-personal'>
+        <ul className={menuPersonalClasses}>
             {
                 menuPersonal.map((e, index) => {
                     return (
                         <li className="menu-personal__item" key={index}>
-                            <a href={e.link}>{e.name}</a>
+                            <NavLink to={e.link}>{e.name}</NavLink>
                         </li>
                     )
                 })

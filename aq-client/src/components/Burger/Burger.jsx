@@ -1,12 +1,12 @@
 import React from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 
 import './Burger.sass';
 
-import {useSelector, useDispatch} from 'react-redux';
-import {open} from '../../features/header/burgerSlice';
+import {open} from '../../features/header/menuSlice';
 
 const Burger = () => {
-    const burgerClasses = useSelector((state) => state.burger.classes).join(' ');
+    const burgerClasses = useSelector((state) => state.menu.classesBurger).join(' ');
     const dispatch = useDispatch();
 
     return (

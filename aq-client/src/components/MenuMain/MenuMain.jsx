@@ -1,16 +1,19 @@
 import React from 'react';
 import { NavLink} from "react-router-dom";
 
+import { useSelector } from 'react-redux';
+
 import './MenuMain.sass';
 
 const MenuMain = ({arrLinksMenuMain}) => {
+    const menuMainClasses = useSelector((state) => state.menu.classesMenuMain).join(' ');
     return (
-        <ul className='menu-main'>
+        <ul className={menuMainClasses}>
             {
                 arrLinksMenuMain.map((e, index)=>{
                     return(
                         <li className='menu-main__item' key={index}>
-                            <NavLink href={e.link}>{e.name}</NavLink>
+                            <NavLink to={e.link}>{e.name}</NavLink>
                         </li>
                     )
                 })
