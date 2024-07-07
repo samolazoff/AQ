@@ -1,0 +1,17 @@
+{
+  "name": "aq",
+  "version": "1.0.0",
+  "description": "This is WEB site for company Alfa Quality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samolazoff",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp-pug": "^5.0.0"
+  }
+}
