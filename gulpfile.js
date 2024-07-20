@@ -1,7 +1,7 @@
 const { src, dest, watch } = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
-
+ 
 const pugToHtml = () => {
     return src('./src/layout/components/**/*.pug')
         .pipe(
@@ -20,8 +20,10 @@ const cssToScss = () => {
         .pipe(dest('./build/styles'))
 };
 
-watch('./src/layout/components/**/*.pug', pugToHtml);
-watch(['./src/layout/**/*.scss'], cssToScss);
+
+watch('./src/**/*.scss', cssToScss);
+watch('./src/**/*.pug', pugToHtml);
+
 
 exports.default = pugToHtml;
 exports.default = cssToScss;
