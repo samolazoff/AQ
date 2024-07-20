@@ -18,7 +18,8 @@ const cssToScss = () => {
             sass({}).on('error', sass.logError)
         )
         .pipe(dest('./build/styles'))
-}
+};
+
 watch('./src/layout/components/**/*.pug', pugToHtml);
 watch(['./src/layout/**/*.scss'], cssToScss);
 
